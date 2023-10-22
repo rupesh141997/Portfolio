@@ -1,0 +1,106 @@
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8.8rem;
+  top: 0;
+  z-index: 3;
+  height: 4rem;
+  width: 100vw;
+  background-color:rgba(0, 0, 0, 0.411);
+}
+
+ 
+
+.desktopmenuitems {
+  cursor: pointer;
+  color: white;
+  margin: 1rem;
+}
+
+.desktopmenuitems:hover {
+  color: rgb(230, 230, 20);
+  padding-bottom: 0.5rem;
+  border-bottom: rgba(255, 255, 0, 0.719) solid;
+}
+
+.but {
+  width: 8rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  border-radius: 5rem;
+  font-weight: 500;
+}
+
+svg {
+  width: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+button:hover{
+    background-color:rgb(230, 230, 20) ;
+    font-weight: 700;
+}
+.active{
+  color: rgb(230, 230, 20);
+  padding-bottom: 0.5rem;
+  border-bottom: rgba(255, 255, 0, 0.719) solid;
+}
+.navmenu{
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+.listitems{
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(30, 30, 30);
+}
+.mobMenu{
+  display: none;
+  object-fit: cover;
+  height: 2.5rem;
+}
+
+@media screen and (max-width:842px) {
+  .mobMenu{
+    display: flex;
+    /* right: 2rem;
+     */
+     margin: -6rem;
+  }
+  .desktopmenuitems{
+    display: none;
+  }
+
+  .but{
+    display: none;
+  }
+
+
+}
+@media screen and (max-width:734px) {
+      .navbar h4{
+        margin-left: -5rem;
+      }
+}
+
+/* @media screen and (max-width:854px , min-width:) {
+  .navbar h4{
+    margin-left: -5rem;
+  }
+} */

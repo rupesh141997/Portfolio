@@ -1,0 +1,79 @@
+.skills{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* height: 100vh;
+    width: 100vw; */
+    padding-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.skills h2{
+    padding:4rem 0;
+}
+.skills-inner{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content:center; 
+     
+    gap: 2rem;
+}
+
+.cards p{
+    font-size: 1rem;
+}
+
+.cards{
+    height:17vh;
+    width: 11vw;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid transparent;
+    background: linear-gradient(71deg, #4b414f3e, #49424d62, #3d34406b);
+    background-clip: padding-box;
+    border-radius: 45px; */
+
+    background: rgba(0, 0, 0, 0.096);
+    border-radius: 16px;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.484); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+/* border: 1px solid rgba(255, 255, 255, 0.3); */
+/* box-shadow: 0 4px 30px rgba(36, 36, 35, 0.978); */
+    
+}
+.cards:hover{
+    box-shadow: 0 4px 30px rgba(209, 206, 12, 0.978);
+    /* rgba(0, 0, 0, 0.484) */
+
+}
+
+.cards img{
+    object-fit: contain;
+    height:2rem;
+    /* width: px; */
+}
+.skills h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+}
+
+
+@media screen and (max-width:768px) {
+    
+    .skills{
+        padding-top: 2rem;
+    }
+    .cards{
+        height: 15vh;
+        width: 20vw;
+    }
+
+    .cards p{
+        font-size: 0.8rem;
+    }
+}

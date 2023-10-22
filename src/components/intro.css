@@ -1,0 +1,147 @@
+.intro {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0rem;
+  /* height: 100vh;
+  width: 100vw; */
+ 
+}
+ 
+
+.intro-contain {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* width: 90%; */
+ 
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  /* background-color: aliceblue; */
+  /* width: 42vw; */
+  padding-left: 8rem;
+  padding-top: 2rem;
+}
+
+.intro-contain h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  
+}
+
+.intro-contain h4 {
+  font-size: 3rem;
+  font-weight: 50;
+  font-family: sans-serif;
+}
+
+.intro-contain p {
+     padding-top: 1.2rem;
+     padding-bottom: 4rem;
+  font-size: 1rem;
+  font-weight: 400;
+
+  /* width: 75%; */
+}
+
+.sp {
+  color: rgb(230, 230, 20);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg {
+     
+   width: 30rem;
+   padding-top: 1rem;
+   
+}
+
+.prof {
+    object-fit: contain;
+    /* background-color: aqua; */
+    display: flex;
+    /* z-index: -1; */
+    margin-top: 3rem;
+     
+}
+
+.bt{
+  width: 8rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  border-radius: 5rem;
+  font-weight: 500;
+}
+
+.profiles{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+   
+
+}
+
+.butt{
+  border-radius: 50%;
+}
+.butt img{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.links-part{
+  display: flex;
+  gap: 2rem;
+}
+
+@media screen and (max-width:733px) {
+    .intro-contain{
+        flex-wrap: wrap-reverse;
+        /* margin-top: 30rem; */
+        /* width: 100%; */
+    }
+    .inner{
+        margin-top: 2rem;
+        /* width: 100vw; */
+        margin-left: -5rem;
+    }
+     .bt{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+     }
+      
+     .bg{
+      width: 24rem;
+     }
+
+     .profiles{
+      gap: 1rem;
+      margin-top: 1rem;
+     }
+}
+
+@media screen and (max-width:860px) and (min-width:734px){
+.bg{
+  width: 24rem;
+}
+}
+
+@media screen and (max-width:379px){
+  .bg{
+    width: 23rem;
+  }
+}
+
