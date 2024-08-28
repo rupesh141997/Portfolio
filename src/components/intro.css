@@ -6,6 +6,9 @@
   padding-top: 0rem;
   /* height: 100vh;
   width: 100vw; */
+  background: linear-gradient(360deg, #17202A 40%,#030c1a);
+  border-bottom: 1rem solid #17202A;
+  
  
 }
  

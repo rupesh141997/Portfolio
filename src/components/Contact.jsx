@@ -1,7 +1,11 @@
-import React, { useRef } from "react";
+// import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import TextField from "@mui/material/TextField";
 import "./contact.css";
+import contactback from "../Assets/contact-back.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect ,useRef} from "react";
 
 export default function Contact() {
   const form = useRef();
@@ -27,15 +31,21 @@ export default function Contact() {
         }
       );
   };
+  useEffect(() => {
+    AOS.init({duration: 800,
+      offset: 200,
+      once: false,});
+  }, [])
 
   return (
     <div className="contactform">
-      <h2>Contact Us</h2>
+      <h2 data-aos="zoom-in-up" data-aos-duration="1500">Contact Us</h2>
       <div className="contat-main">
+       <img  data-aos="zoom-in-up" data-aos-duration="1500" src={contactback} alt="" />
          
         <div className="contact-in">
-          <form ref={form} onSubmit={sendEmail}>
-            <TextField
+          <form  data-aos="zoom-in-up" data-aos-duration="1500" ref={form} onSubmit={sendEmail}>
+            <TextField  
               id="standard-basic"
               label="Name"
               variant="standard"
@@ -67,8 +77,10 @@ export default function Contact() {
           </form>
         </div>
         <div className="cont-info">
-          <p> +91 952-754-7716</p>
-          <p> rupeshborkar14@gmail.com</p>
+          
+          {/* <p> +91 952-754-7716</p>
+          <p> rupeshborkar14@gmail.com</p> */}
+
 
         </div>
       </div>
